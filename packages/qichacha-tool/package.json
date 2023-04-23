@@ -1,0 +1,22 @@
+{
+	"name": "@light0x00/qichacha-tool",
+	"version": "1.0.14",
+	"description": "",
+	"main": "index.mjs",
+	"scripts": {},
+	"bin": {
+		"qcc": "index.mjs"
+	},
+	"author": "light0x00",
+	"license": "MIT",
+	"dependencies": {
+		"dialog": "^0.3.1",
+		"exceljs": "^4.3.0",
+		"getopts": "^2.3.0",
+		"inquirer": "^9.1.5",
+		"selenium-webdriver": "^4.9.0"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}

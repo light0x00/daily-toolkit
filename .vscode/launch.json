@@ -1,0 +1,18 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "node",
+			// "runtimeVersion": "v18.16.0", // If i need to run node 4.8.7
+			"request": "launch",
+			"name": "Launch",
+			"program": "${file}",
+			"runtimeExecutable": "/Users/light/.nvm/versions/node/v18.16.0/bin/node",
+			"args": ["-i", "/Users/light/Downloads/帮查信用代码.xlsx"],
+			"outputCapture": "std"
+		}
+	]
+}
