@@ -1,6 +1,6 @@
 {
 	"name": "@light0x00/qichacha-tool",
-	"version": "1.0.17",
+	"version": "1.1.1",
 	"description": "",
 	"main": "index.mjs",
 	"scripts": {},
@@ -14,6 +14,8 @@
 		"exceljs": "^4.3.0",
 		"getopts": "^2.3.0",
 		"inquirer": "^9.1.5",
+		"keypress": "^0.2.1",
+		"node-notifier": "^10.0.1",
 		"selenium-webdriver": "^4.9.0"
 	},
 	"publishConfig": {

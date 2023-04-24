@@ -5,3 +5,4 @@ target/
 libs/
 *.versionsBackup
 node_modules
+*.xlsx

@@ -11,8 +11,28 @@
 			"name": "Launch",
 			"program": "${file}",
 			"runtimeExecutable": "/Users/light/.nvm/versions/node/v18.16.0/bin/node",
-			"args": ["-i", "/Users/light/Downloads/帮查信用代码.xlsx"],
-			"outputCapture": "std"
+			"outputCapture": "std",
+			"console": "integratedTerminal"
+		},
+		{
+			"type": "node",
+			// "runtimeVersion": "v18.16.0", // If i need to run node 4.8.7
+			"request": "launch",
+			"name": "qichacha",
+			"program": "packages/qichacha-tool/index.mjs",
+			"runtimeExecutable": "/Users/light/.nvm/versions/node/v18.16.0/bin/node",
+			"args": [
+				"-i",
+				"/Users/light/Downloads/帮查信用代码.xlsx",
+				"--cookie",
+				"qcc_did=6ae486f2795c4ed28eb8cd0be525986f; QCCSESSID=f41cbffd304711b4ad9e2c8646; UM_distinctid=187a8690553b2e-090ac5acc491a8-133a645d-1aeaa0-187a86905549b2; _uab_collina=168230971048370918316337; acw_tc=74d3b49916823310267822457e55d495bf365dc890b2dfc44768d04318; CNZZDATA1254842228=1401745614-1682154738-https%253A%252F%252Fwww.google.com%252F%7C1682327545",
+				// "--startRow", "10",
+				// "--endRow", "9",
+				// "--outputExcel","/Users/light/Desktop/my-workbench/projectes/node-toolkit/信用代码查询结果-2023-04-24T20:26:41+08:00.xlsx"
+				// "--outputExcel","/Users/light/Desktop/my-workbench/projectes/node-toolkit/信用代码查询结果-2023-04-24T19:22:24+08:00.xlsx"
+			],
+			"outputCapture": "std",
+			"console": "integratedTerminal"
 		}
 	]
 }
