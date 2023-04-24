@@ -1,6 +1,6 @@
 {
 	"name": "@light0x00/qichacha-tool",
-	"version": "1.0.14",
+	"version": "1.0.17",
 	"description": "",
 	"main": "index.mjs",
 	"scripts": {},

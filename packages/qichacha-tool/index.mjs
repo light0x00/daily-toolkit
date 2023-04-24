@@ -66,22 +66,24 @@ async function work(options) {
 			}
 			lastRowNumber = rowsNumber
 		}
+		console.log(`==================== /ᐠ. .ᐟ\ฅ 下次再见 ===================
+			${fs.readFileSync(path.join(__dirname, 'banner_sleep.txt')).toString()}
+			============================================================`)
+
 	} catch (e) {
 		console.log(`查询中断,发生异常:`, e)
 		console.log(`
-==================== ʕ￫ᴥ￩ʔ 貌似出错了 ===================
+================== ʕ ￫ ᴥ ￩ ʔ 貌似出错了 =================
 如果还有未处理的数据,请复制以下指令继续处理,或者咨询程序作者: 
 qcc --inputExcel ${options.inputExcel} --startRow=${lastRowNumber + 1} --outputExcel=${options.outputExcel}
-				`)
+============================================================`)
 	} finally {
 		await workbook.xlsx.writeFile(options.outputExcel);
 
 		console.log(`
-==================== /ᐠ. .ᐟ\ฅ 下次再见 ===================
-${fs.readFileSync(path.join(__dirname, 'banner_sleep.txt')).toString()}
-============================================================
 本次任务结束,处理行范围: ${options.startRow} ~ ${lastRowNumber} 行,处理结果已写入Excel文件,快去看看吧: 
-${options.outputExcel}`)
+${options.outputExcel}
+`)
 		await ag.destroy()
 	}
 }
