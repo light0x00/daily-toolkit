@@ -18,7 +18,7 @@ export class Worker {
 		this.isInterrupted.value = true;
 	}
 
-	intterupted(){
+	interrupted(){
 		return this.isInterrupted.value
 	}
 

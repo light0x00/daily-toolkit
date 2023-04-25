@@ -38,13 +38,13 @@ import notifier from 'node-notifier';
 		============================================================`)
 	} finally {
 		console.log(`
-本次任务结束,处理行范围: ${options.startRow} ~ ${worker.lastRowNumber} 行,处理结果已写入Excel文件,快去看看吧: 
+本次任务结束,处理行范围: ${Math.min(options.startRow,worker.lastRowNumber)} ~ ${worker.lastRowNumber} 行,处理结果已写入Excel文件,快去看看吧: 
 ${options.outputExcel}
 
 👆👆👆 处理结果保存在这里!
 `)
 	}
-	if (worker.intterupted()) {
+	if (worker.interrupted()) {
 		console.log(`
 ⏸️ 处理已中断! 请复制以下指令以备下次执行,继续处理后续数据:
 
