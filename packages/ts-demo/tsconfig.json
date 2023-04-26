@@ -1,0 +1,12 @@
+{
+	"extends": "../../tsconfig.esm.json",
+	"compilerOptions": {
+		/* 源码目录 */
+		"rootDir": "src",
+		/* JS输出目录 */
+		"outDir": "target/esm",
+		/* 类型声明文件输出目录 */
+		"declarationDir": "target/types"
+	},
+	"include": ["src"],
+}

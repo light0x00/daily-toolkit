@@ -8,11 +8,24 @@
 			"type": "node",
 			// "runtimeVersion": "v18.16.0", // If i need to run node 4.8.7
 			"request": "launch",
-			"name": "Launch",
+			"name": "RUN-JS",
 			"program": "${file}",
 			"runtimeExecutable": "/Users/light/.nvm/versions/node/v18.16.0/bin/node",
 			"outputCapture": "std",
 			"console": "integratedTerminal"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "RUN-TS",
+			"program": "${file}",
+			"args": [
+			],
+			"console": "integratedTerminal",
+			// "protocol": "inspector",
+			"sourceMaps": true,
+			//告知 vscode ts源码编译后的js文件的位置
+			"outFiles": ["${workspaceFolder}/packages/*/output/cjs/*.js"]
 		},
 		{
 			"type": "node",

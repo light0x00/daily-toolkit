@@ -1,0 +1,26 @@
+{
+	"compilerOptions": {
+		/* Basic Options */
+		"incremental": true,                   /* Enable incremental compilation */
+		/* 输出的 JS 版本 */
+		"target": "ESNext", /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */
+		/* 源码的 JS 版本(决定源码可使用的运行时库、语法) */
+		"lib": [
+			"ESNext"
+		],
+		/* Strict Type-Checking Options */
+		"strict": true, /* Enable all strict type-checking options. */
+		/* 兼容策略 */
+		"moduleResolution": "Node", /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
+		"allowSyntheticDefaultImports": true, /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */
+		"esModuleInterop": true, /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
+		"skipLibCheck": true, /* 第三方库兼容问题 */
+		/* 生成的配套 */
+		"declaration": true, /* 生成类声明文件 */
+		"declarationMap": true, /* 生成「类型声明文件-TS源码文件」映射 (这样其他人引用npm包时,就可以直接跳转到 ts源码了, 而不是 js 文件, 或者 d.ts) */
+		"sourceMap": true,	 /* 生成「JS-TS源码」映射文件(这样其他人引用npm包时,就可以直接跳转到 ts源码了, 而不是 js 文件, 或者 d.ts) */
+		/* 开启子模块引用特性(使得多个 package 间可互相引用、跳转) */
+		"composite": true
+	},
+	"include": [],
+}

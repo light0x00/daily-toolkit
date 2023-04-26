@@ -1,0 +1,9 @@
+/* 用于给打包为esm的模块作为基配置 */
+{
+	"extends": "./tsconfig.base.json",
+	"compilerOptions": {
+		/* 输出的模块坏标准 */
+		"module": "ESNext"
+	},
+	"include": []
+}
