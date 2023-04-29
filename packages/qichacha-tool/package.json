@@ -1,6 +1,6 @@
 {
 	"name": "@light0x00/qichacha-tool",
-	"version": "1.1.5",
+	"version": "1.1.6",
 	"description": "",
 	"main": "src/index.mjs",
 	"scripts": {},
@@ -11,8 +11,12 @@
 		"src",
 		"README.md"
 	],
-	"author": "light0x00",
 	"license": "MIT",
+	"author": "Chen Yang <light0x00@163.com> (https://github.com/light0x00)",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/light0x00/daily-toolkit"
+	},
 	"dependencies": {
 		"exceljs": "^4.3.0",
 		"getopts": "^2.3.0",
