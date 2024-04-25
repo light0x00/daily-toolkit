@@ -7,3 +7,4 @@ libs/
 node_modules
 *.xlsx
 lib/
+packages/daily-scripts

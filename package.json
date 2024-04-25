@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "npx tsc -b tsconfig.json"
+    "build": "npx tsc -b --watch tsconfig.json"
   },
   "keywords": [],
-  "author": "",
+  "author": "", 
   "license": "ISC",
   "workspaces": [
     "packages/qichacha-tool",
-    "packages/ts-demo"
+    "packages/ts-demo",
+    "packages/daily-scripts"
   ],
   "devDependencies": {
     "typescript": "^5.3.2"

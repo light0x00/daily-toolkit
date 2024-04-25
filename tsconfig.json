@@ -3,6 +3,9 @@
 	"references": [
 		{
 			"path": "./packages/ts-demo/tsconfig.json"
+		},
+		{
+			"path": "./packages/daily-scripts/tsconfig.json"
 		}
 	]
 }

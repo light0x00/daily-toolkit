@@ -2,17 +2,23 @@
   "name": "@light0x00/ts-demo",
   "version": "1.0.0",
   "description": "",
-	"type": "module",
-	"main": "target/esm/index.js",
-	"module": "target/esm/index.js",
-	"types": "target/types/index.d.ts",
-	"files": ["target/esm","target/types","src/"],
-  "scripts": {
-  },
+  "type": "module",
+  "main": "target/esm/index.js",
+  "module": "target/esm/index.js",
+  "types": "target/types/index.d.ts",
+  "files": [
+    "target/esm",
+    "target/types",
+    "src/"
+  ],
+  "scripts": {},
   "keywords": [],
   "author": "Light0x00",
   "license": "MIT",
   "dependencies": {
-
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.202"
   }
 }

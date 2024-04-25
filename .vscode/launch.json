@@ -16,6 +16,7 @@
 		},
 		{
 			"type": "node",
+			"runtimeExecutable": "D:\\softwares\\nvm\\v20.9.0\\node.exe",
 			"request": "launch",
 			"name": "RUN-TS",
 			"program": "${file}",
@@ -25,7 +26,7 @@
 			// "protocol": "inspector",
 			"sourceMaps": true,
 			//告知 vscode ts源码编译后的js文件的位置
-			"outFiles": ["${workspaceFolder}/packages/*/target/esm/*.js"]
+			"outFiles": ["${workspaceFolder}/packages/*/target/esm/**/*.js"]
 		},
 		{
 			"type": "node",
